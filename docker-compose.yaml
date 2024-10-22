@@ -1,0 +1,8 @@
+services:
+  db:
+    image: postgis/postgis
+    environment:
+      POSTGRES_HOST_AUTH_METHOD: trust
+      POSTGRES_PASSWORD: test12345
+    ports:
+      - 5345:5432
